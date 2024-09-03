@@ -17,26 +17,63 @@
 <body>
   <div class="container-fluid">
     <nav class="navbar bg-body-tertiary">
-      <div class="container-fluid d-flex justify-content-center
+      <div class="container-fluid d-flex justify-content-center">
         <div class=" me-auto">
-        <a class="navbar-brand" href="#">
-          <i class="fa-brands fa-instagram"></i>
-          Instagram
-        </a>
-      </div>
-      <div>
-        <button class="btn btn-success">Create new Post</button>
-      </div>
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <i class="fa-solid fa-gear"></i>
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-      </div>
+          <a class="navbar-brand" href="#">
+            <i class="fa-brands fa-instagram"></i>
+            Instagram
+          </a>
+        </div>
+        <div>
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+           Create a new Post
+          </button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="Caption" class="col-form-label"><strong>Caption:</strong></label>
+                      <textarea class="form-control" id="message-text">Add the caption of your post here</textarea>
+                    </div>
+                  </form>
+                  <div class="row p-2">
+                    <button class="col-1 border rounded p-1 m-1 btn-light">
+                      <i class="fa-solid fa-camera"></i>
+                    </button>
+                    <button class="col-1 border rounded p-1 m-1 btn-light">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Publish</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+          </ul>
+        </div>
 
     </nav>
 
@@ -101,9 +138,9 @@
               <img src="https://picsum.photos/500?random=3" alt="random image" width="320px" />
               <p class="card-text text-start"><strong>300 Likes</strong></p>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, deserunt!</p>
-  
+
             </div>
-  
+
           </div>
           <div class="col-4">
           </div>
@@ -118,14 +155,98 @@
               <p class="card-text text-start"><strong>210 Likes</strong></p>
               <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quasi autem
                 praesentium odit tenetur vero? Odit, distinctio.</p>
-  
+
             </div>
-  
+
           </div>
           <div class="col-4">
           </div>
         </div>
 
+        <div class="row">
+          <div class="col-4">
+          </div>
+          <div class="col-4">
+            <div class="p-2 border" style="width:350px">
+              <h4 class="card-title">Sunset !</h4>
+              <img src="https://picsum.photos/500?random=19" alt="random image" width="320px" />
+              <p class="card-text text-start"><strong>298 Likes</strong></p>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, deserunt!</p>
+
+            </div>
+
+          </div>
+          <div class="col-4">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+          </div>
+          <div class="col-4">
+            <div class="p-2 border" style="width:350px">
+              <h4 class="card-title">Day !</h4>
+              <img src="https://picsum.photos/500?random=3" alt="random image" width="320px" />
+              <p class="card-text text-start"><strong>298 Likes</strong></p>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, deserunt!</p>
+
+            </div>
+
+          </div>
+          <div class="col-4">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+          </div>
+          <div class="col-4">
+            <div class="p-2 border" style="width:350px">
+              <h4 class="card-title">Yess !</h4>
+              <img src="https://picsum.photos/500?random=21" alt="random image" width="320px" />
+              <p class="card-text text-start"><strong>471 Likes</strong></p>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, deserunt!</p>
+
+            </div>
+
+          </div>
+          <div class="col-4">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+          </div>
+          <div class="col-4">
+            <div class="p-2 border" style="width:350px">
+              <h4 class="card-title">Yes !</h4>
+              <img src="https://picsum.photos/500?random=5" alt="random image" width="320px" />
+              <p class="card-text text-start"><strong>587 Likes</strong></p>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, deserunt!</p>
+
+            </div>
+
+          </div>
+          <div class="col-4">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+          </div>
+          <div class="col-4">
+            <div class="p-2 border" style="width:350px">
+              <h4 class="card-title">Wowww !</h4>
+              <img src="https://picsum.photos/500?random=18" alt="random image" width="320px" />
+              <p class="card-text text-start"><strong>287 Likes</strong></p>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, deserunt!</p>
+
+            </div>
+
+          </div>
+          <div class="col-4">
+          </div>
+        </div>
 
       </div>
     </div>
@@ -192,12 +313,11 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h1 class="modal-title fs-5" id="staticBackdropLabel">Create new post</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">Caption</button>
               </div>
               <div class="modal-body">
-                <textarea class="form-control" id="message-text"></textarea
-          
-                    </textarea>
+                <textarea class="form-control" id="message-text"></textarea>
+
               </div>
               <div class="container">
                 <button class="btn btn-outline-dark"><i class="fa-solid fa-camera p-1"></i></button>
@@ -211,7 +331,9 @@
           </div>
         </div>
 
+
       </div>
+    </div>
 </body>
 
 </html>
